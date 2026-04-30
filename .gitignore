@@ -1,0 +1,10 @@
+out
+form
+*.o
+*.out
+cplex.log
+clone*.log
+results.txt
+.vscode/
+.DS_Store
+Thumbs.db
