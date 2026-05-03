@@ -342,3 +342,202 @@ void createConstraints(IloEnv& env, IloModel& mod, Data& data,
     R13: forall(i in 1..n, j in 1..n, m in 1..n) b[i][j][m] > =0 
 	*/
 }
+
+void createVariablesTaherkhani(IloEnv& env, Data& data, IloModel& mod,
+                               IloArray<IloNumVarArray>& x,
+                               IloArray<IloArray<IloArray<IloNumVarArray>>>& y,
+                               IloArray<IloNumVarArray>& z,
+                               IloArray<IloArray<IloNumVarArray>>& f,
+                               vector<double>& O) {
+    
+    // x[i][k]: 1 se nó i é alocado ao hub k (se i==k, o hub k está aberto) - Equação (12)
+    for(int i = 0; i < data.n; i++) {
+        x[i] = IloNumVarArray(env, data.n, 0, 1, ILOBOOL);
+    }
+
+    // z[k][m]: 1 se há link inter-hub entre k e m - Equação (14)
+    for(int k = 0; k < data.n; k++) {
+        z[k] = IloNumVarArray(env, data.n, 0, 1, ILOBOOL);
+    }
+
+    // y[i][j][k][m]: 1 se a demanda de i para j viaja via hubs k e m - Equação (13)
+    for(int i = 0; i < data.n; i++) {
+        y[i] = IloArray<IloArray<IloNumVarArray>>(env, data.n);
+        for(int j = 0; j < data.n; j++) {
+            y[i][j] = IloArray<IloNumVarArray>(env, data.n);
+            for(int k = 0; k < data.n; k++) {
+                y[i][j][k] = IloNumVarArray(env, data.n, 0, 1, ILOBOOL);
+            }
+        }
+    }
+
+    // f[i][k][m]: fluxo contínuo originado em i passando pelo link k-m - Equação (11)
+    for(int i = 0; i < data.n; i++) {
+        f[i] = IloArray<IloNumVarArray>(env, data.n);
+        for(int k = 0; k < data.n; k++) {
+            f[i][k] = IloNumVarArray(env, data.n, 0, IloInfinity, ILOFLOAT);
+        }
+    }
+
+    // O[i] (Fluxo originado do nó i)
+    for(int i = 0; i < data.n; i++) {
+        for(int j = 0; j < data.n; j++) {
+            O[i] += data.w[i][j];
+        }
+    }
+
+    // Equação (1): Função Objetivo
+    IloExpr obj(env);
+
+    for(int i = 0; i < data.n; i++) {
+        for(int j = 0; j < data.n; j++) {
+            for(int k = 0; k < data.n; k++) {
+                for(int m = 0; m < data.n; m++) {
+                    // Receita (positivo)
+                    obj += data.r[i][j] * data.w[i][j] * y[i][j][k][m];
+                    // Custo de coleta e distribuição (negativo)
+                    obj -= (data.c[i][k] + data.c[m][j]) * data.w[i][j] * y[i][j][k][m];
+                }
+            }
+        }
+    }
+
+    for(int i = 0; i < data.n; i++) {
+        for(int k = 0; k < data.n; k++) {
+            for(int m = 0; m < data.n; m++) {
+                // Custo de transferência com desconto alpha (negativo)
+                obj -= data.alpha * data.c[k][m] * f[i][k][m];
+            }
+        }
+    }
+
+    for(int k = 0; k < data.n; k++) {
+        // Custo fixo de instalação do hub (negativo)
+        obj -= data.s[k] * x[k][k];
+        for(int m = 0; m < data.n; m++) {
+            if(k != m) {
+                // Custo de operação do link inter-hub (negativo)
+                obj -= data.g[k][m] * z[k][m];
+            }
+        }
+    }
+
+    mod.add(IloMaximize(env, obj));
+    obj.end();
+}
+
+void createConstraintsTaherkhani(IloEnv& env, IloModel& mod, Data& data,
+                                 IloArray<IloNumVarArray>& x,
+                                 IloArray<IloArray<IloArray<IloNumVarArray>>>& y,
+                                 IloArray<IloNumVarArray>& z,
+                                 IloArray<IloArray<IloNumVarArray>>& f,
+                                 vector<double>& O) {
+    
+    // (2): sum(k) sum(m) y[i][j][k][m] <= 1
+    for(int i = 0; i < data.n; i++) {
+        for(int j = 0; j < data.n; j++) {
+            IloExpr r2(env);
+            for(int k = 0; k < data.n; k++) {
+                for(int m = 0; m < data.n; m++) {
+                    r2 += y[i][j][k][m];
+                }
+            }
+            mod.add(r2 <= 1);
+            r2.end();
+        }
+    }
+
+    // (3): sum(k) x[i][k] <= 1
+    for(int i = 0; i < data.n; i++) {
+        IloExpr r3(env);
+        for(int k = 0; k < data.n; k++) {
+            r3 += x[i][k];
+        }
+        mod.add(r3 <= 1);
+        r3.end();
+    }
+
+    // (4): x[i][k] <= x[k][k]
+    for(int i = 0; i < data.n; i++) {
+        for(int k = 0; k < data.n; k++) {
+            mod.add(x[i][k] <= x[k][k]);
+        }
+    }
+
+    // (5): y[i][j][k][m] <= x[i][k]
+    for(int i = 0; i < data.n; i++) {
+        for(int j = 0; j < data.n; j++) {
+            for(int k = 0; k < data.n; k++) {
+                for(int m = 0; m < data.n; m++) {
+                    mod.add(y[i][j][k][m] <= x[i][k]);
+                }
+            }
+        }
+    }
+
+    // (6): y[i][j][k][m] <= x[j][m]
+    for(int i = 0; i < data.n; i++) {
+        for(int j = 0; j < data.n; j++) {
+            for(int k = 0; k < data.n; k++) {
+                for(int m = 0; m < data.n; m++) {
+                    mod.add(y[i][j][k][m] <= x[j][m]);
+                }
+            }
+        }
+    }
+
+    // (7)
+    for(int i = 0; i < data.n; i++) {
+        for(int k = 0; k < data.n; k++) {
+            IloExpr r7_left(env);
+            IloExpr r7_right(env);
+
+            for(int m = 0; m < data.n; m++) {
+                if(m != k) {
+                    r7_left += f[i][m][k];
+                    r7_right += f[i][k][m];
+                }
+            }
+
+            for(int j = 0; j < data.n; j++) {
+                for(int m = 0; m < data.n; m++) {
+                    r7_left += data.w[i][j] * y[i][j][k][m];
+                    r7_right += data.w[i][j] * y[i][j][m][k]; 
+                }
+            }
+            
+            mod.add(r7_left == r7_right);
+            r7_left.end();
+            r7_right.end();
+        }
+    }
+
+    // (8): f[i][k][m] <= O[i] * z[k][m]
+    for(int i = 0; i < data.n; i++) {
+        for(int k = 0; k < data.n; k++) {
+            for(int m = 0; m < data.n; m++) {
+                if(k != m) {
+                    mod.add(f[i][k][m] <= O[i] * z[k][m]);
+                }
+            }
+        }
+    }
+
+    // (9): z[k][m] <= x[k][k]
+    for(int k = 0; k < data.n; k++) {
+        for(int m = 0; m < data.n; m++) {
+            if(k != m) {
+                mod.add(z[k][m] <= x[k][k]);
+            }
+        }
+    }
+
+    // (10): z[k][m] <= x[m][m]
+    for(int k = 0; k < data.n; k++) {
+        for(int m = 0; m < data.n; m++) {
+            if(k != m) {
+                mod.add(z[k][m] <= x[m][m]);
+            }
+        }
+    }
+}

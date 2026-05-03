@@ -46,3 +46,19 @@ void createConstraints(IloEnv& env, IloModel& mod, Data& data,
                      IloArray<IloNumVarArray>& a,
                      IloArray<IloArray<IloNumVarArray>>& b,
                      vector<double>& O);
+
+
+// --- Formulação Taherkhani (2019) ---
+void createVariablesTaherkhani(IloEnv& env, Data& data, IloModel& mod,
+                               IloArray<IloNumVarArray>& x,
+                               IloArray<IloArray<IloArray<IloNumVarArray>>>& y,
+                               IloArray<IloNumVarArray>& z,
+                               IloArray<IloArray<IloNumVarArray>>& f,
+                               vector<double>& O);
+
+void createConstraintsTaherkhani(IloEnv& env, IloModel& mod, Data& data,
+                                 IloArray<IloNumVarArray>& x,
+                                 IloArray<IloArray<IloArray<IloNumVarArray>>>& y,
+                                 IloArray<IloNumVarArray>& z,
+                                 IloArray<IloArray<IloNumVarArray>>& f,
+                                 vector<double>& O);
