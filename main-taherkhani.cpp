@@ -98,6 +98,23 @@ int main (int argc, char *argv[]) {
         }
         
         // RESULTADOS 
+        FILE *re;
+        re = fopen("taherkhani_results.txt","aw+"); 
+        
+        fprintf(re, "Informações Gerais: %s | %d | %.1f | %.0f | %.0f | %.0f \n", argv[1], data.n, data.alpha, data.r[0][0], data.s[0], data.g[0][0]);
+        fprintf(re, "Valor função objetivo: %f\t \n", (double) cplex.getObjValue());
+        fprintf(re, "Demanda Satisfeita: %f (%f%%)\t \n", satisfiedDemand, (satisfiedDemand / totalDemand) * 100.0);
+        fprintf(re, "Tempo de CPU: %f\t \n", (double) timer.getTime());
+        
+        fprintf(re, "Hubs: \n" );
+        for(int j = 0; j < data.n; j++){
+            if( cplex.getValue(x[j][j]) >= 0.1){
+                fprintf(re, "%d\t \n", j+1);
+            }
+        }
+        fprintf(re, "======================================================================\n");
+        fclose(re); 
+
         cout << "\n--- RESULTADOS TAHERKHANI (2019) ---" << endl;
         cout << "Função objetivo: " << cplex.getObjValue() << endl;
         cout << "Tamanho da rede (n)   : " << data.n << endl;

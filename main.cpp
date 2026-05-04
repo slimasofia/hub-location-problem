@@ -91,12 +91,27 @@ int main (int argc, char *argv[]) {
             }
         }
 
-        // -------------------------------------------------------
+        // RESULTADOS 
 
-        FILE *out = fopen("results.txt","w");
-		saveResults(out, argv, data.n, data.alpha, data.w, data.g, data.r, data.s, timer, cplex, x, z, a, b, f);
-        fclose(out);
+        // salvar resultados em arquivo
+        FILE *re;
+        re = fopen("my_results.txt","aw+"); 
+        
+        fprintf(re, "Informações Gerais: %s | %d | %.1f | %.0f | %.0f | %.0f \n", argv[1], data.n, data.alpha, data.r[0][0], data.s[0], data.g[0][0]);
+        fprintf(re, "Valor função objetivo: %f\t \n", (double) cplex.getObjValue());
+        fprintf(re, "Demanda Satisfeita: %f (%f%%)\t \n", satisfiedDemand, (satisfiedDemand / totalDemand) * 100.0);
+        fprintf(re, "Tempo de CPU: %f\t \n", (double) timer.getTime());
+        
+        fprintf(re, "Hubs: \n" );
+        for(int j = 0; j < data.n; j++){
+            if( cplex.getValue(x[j][j]) >= 0.1){
+                fprintf(re, "%d\t \n", j+1);
+            }
+        }
+        fprintf(re, "======================================================================\n");
+        fclose(re); 
 
+        // mostrar resultados no terminal
         cout << "\nFunção objetivo: " << cplex.getObjValue () << endl ;
 		cout << "Tamanho da rede (n)   : " << data.n << endl;
         cout << "Fator de desconto     : " << data.alpha << endl;

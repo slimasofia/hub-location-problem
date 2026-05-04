@@ -20,15 +20,6 @@ struct Data {
 	vector<double> s;			// Custos de operação nos links inter-hubs
 };
 
-void saveResults(FILE *out, char *argv[], int n, float alpha,
-                      vector<vector<double>>& w, vector<vector<double>>& g,
-                      vector<vector<double>>& r, vector<double>& s,
-                      IloTimer& timer, IloCplex& cplex,
-                      IloArray<IloNumVarArray>& x, IloArray<IloNumVarArray>& z,
-                      IloArray<IloNumVarArray>& a,IloArray<IloArray<IloNumVarArray>>& b,
-                      IloArray<IloArray<IloNumVarArray>>& f);
-
-
 void readData(Data& data, ifstream& file, int argc, char *argv[]);
 
 void createVariables(IloEnv& env, Data& data, IloModel& mod,

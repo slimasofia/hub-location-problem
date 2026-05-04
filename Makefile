@@ -14,4 +14,4 @@ build-taherkhani:
 	$(CXX) $(CFLAGS) $(CPPFLAGS) -o taherkhani_out main-taherkhani.cpp model.cpp $(CPLEXLIB)
 
 clean:
-	rm -f out taherkhani_out results.txt *.o *.log
+	rm -f out taherkhani_out my_results.txt taherkhani_results.txt *.o *.log
