@@ -74,64 +74,66 @@ int main (int argc, char *argv[]) {
             gap = 0.0;
         }
 
-        // --- CÁLCULO DE DEMANDA
-        double totalDemand = 0;
-        double satisfiedDemand = 0;
-        
-        for(int i = 0; i < data.n; i++) {
-            for(int j = 0; j < data.n; j++) {
-                // Soma a demanda total disponível
-                totalDemand += data.w[i][j];
+        // CÁLCULO DA DEMANDA SATISFEITA POR NÚMERO DE PARES 0-D
+        int satisfiedPairs = 0;
+        int totalPairs = data.n * (data.n - 1); 
+
+        for(int i = 0; i < data.n; i++){
+            for(int j = 0; j < data.n; j++){
+                if(i == j) continue; 
                 
-                // Varre as combinações de hubs para ver onde a demanda passou
-                for(int k = 0; k < data.n; k++) {
-                    for(int m = 0; m < data.n; m++) {
-                        double y_val = cplex.getValue(y[i][j][k][m]);
-                        
-                        // Usamos uma pequena tolerância para evitar erros de ponto flutuante
-                        if(y_val > 0.00001) {
-                            satisfiedDemand += data.w[i][j] * y_val;
+                bool isSatisfied = false;
+                for(int k = 0; k < data.n; k++){
+                    for(int m = 0; m < data.n; m++){
+                        if(cplex.getValue(y[i][j][k][m]) >= 0.1){
+                            isSatisfied = true;
+                            break; 
                         }
                     }
+                    if(isSatisfied) break; 
+                }
+                
+                if(isSatisfied) {
+                    satisfiedPairs++;
                 }
             }
         }
+        double percentDemand = ((double)satisfiedPairs / totalPairs) * 100.0;
         
         // RESULTADOS 
         FILE *re;
         re = fopen("taherkhani_results.txt","aw+"); 
+
+        vector<int> hubs;
+        for(int j = 0; j < data.n; j++){
+            if(cplex.getValue(x[j][j]) >= 0.1){
+                hubs.push_back(j + 1); 
+            }
+        }
         
         fprintf(re, "Informações Gerais: %s | %d | %.1f | %.0f | %.0f | %.0f \n", argv[1], data.n, data.alpha, data.r[0][0], data.s[0], data.g[0][0]);
         fprintf(re, "Valor função objetivo: %f\t \n", (double) cplex.getObjValue());
-        fprintf(re, "Demanda Satisfeita: %f (%f%%)\t \n", satisfiedDemand, (satisfiedDemand / totalDemand) * 100.0);
+        fprintf(re, "Demanda Satisfeita: %d pares (%.2f%%)\t \n", satisfiedPairs, percentDemand);        
         fprintf(re, "Tempo de CPU: %f\t \n", (double) timer.getTime());
-        
-        fprintf(re, "Hubs: \n" );
-        for(int j = 0; j < data.n; j++){
-            if( cplex.getValue(x[j][j]) >= 0.1){
-                fprintf(re, "%d\t \n", j+1);
-            }
+        fprintf(re, "Hubs: " );
+        for(int hub : hubs) {
+            fprintf(re, "%d\t ", hub);
         }
-        fprintf(re, "======================================================================\n");
+        fprintf(re, "\n======================================================================\n");
         fclose(re); 
 
         cout << "\n--- RESULTADOS TAHERKHANI (2019) ---" << endl;
-        cout << "Função objetivo: " << cplex.getObjValue() << endl;
-        cout << "Tamanho da rede (n)   : " << data.n << endl;
-        cout << "Fator de desconto     : " << data.alpha << endl;
-        cout << "Gap de Otimalidade    : " << (100 * gap) << " %" << endl;
-        cout << "Tempo de CPU: " << (double)timer.getTime() << " segundos" << endl;
-        cout << "Demanda Total da Rede : " << totalDemand << endl;
-        cout << "Demanda Satisfeita    : " << satisfiedDemand << " (" 
-             << (satisfiedDemand / totalDemand) * 100.0 << "%)" << endl;
-             
-        printf("Hubs Instalados:");
-        for(int k = 0; k < data.n; k++){
-          if( cplex.getValue(x[k][k]) >= 0.1){
-            printf(" %d\t ", k+1);
-          }
+        cout << "\nFunção objetivo     : " << cplex.getObjValue () << endl ;
+        cout << "Tamanho da rede (n) : " << data.n << endl;
+        cout << "Fator de desconto   : " << data.alpha << endl;
+        cout << "Gap de Otimalidade  : " << (100 * gap) << " %" << endl;
+        cout << "Tempo de CPU        : " << (double)timer.getTime() << " segundos" << endl;
+        cout << "Demanda Satisfeita  : " << satisfiedPairs << " pares (" << fixed << setprecision(2) << percentDemand << "%)" << endl;        
+        cout << "Hubs Instalados     : ";
+        for(int hub : hubs) {
+            cout << hub << " ";
         }
-        cout << "\n------------------------------------\n" << endl;
+        cout << endl;
 
         env.end();
     }

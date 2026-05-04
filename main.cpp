@@ -75,60 +75,88 @@ int main (int argc, char *argv[]) {
         }
 
 
-        // --- CÁLCULO DE DEMANDA NO TERMINAL 
-        double totalDemand = 0;
-        double satisfiedDemand = 0;
+        // --- CÁLCULO DE DEMANDA 
+        // double totalDemand = 0;
+        // double satisfiedDemand = 0;
         
-        for(int i = 0; i < data.n; i++) {
-            for(int j = 0; j < data.n; j++) {
-                totalDemand += data.w[i][j];
-                for(int m = 0; m < data.n; m++) {
-                    double b_val = cplex.getValue(b[i][j][m]);
-                    if(b_val > 0.00001) {
-                        satisfiedDemand += data.w[i][j] * b_val;
+        // for(int i = 0; i < data.n; i++) {
+        //     for(int j = 0; j < data.n; j++) {
+        //         totalDemand += data.w[i][j];
+        //         for(int m = 0; m < data.n; m++) {
+        //             double b_val = cplex.getValue(b[i][j][m]);
+        //             if(b_val > 0.00001) {
+        //                 satisfiedDemand += data.w[i][j] * b_val;
+        //             }
+        //         }
+        //     }
+        // }
+
+        // (o cálculo anterior calculava o volume de mercadorias transportadas: 
+        // somar o peso (w_ij​) das rotas abertas e dividir pela soma de todos os pesos da matriz)
+
+        // CÁLCULO DA DEMANDA SATISFEITA POR NÚMERO DE PARES 0-D
+        int satisfiedPairs = 0;
+        // o total de pares OD posíveis é 25 x 24 = 600 (já qeue um nó não manda mercadoria para ele mesmo) 
+        int totalPairs = data.n * (data.n - 1); // 600 pares
+
+        for(int i = 0; i < data.n; i++){
+            for(int j = 0; j < data.n; j++){
+                if(i == j) continue; // ignora a diagonal principal
+                
+                bool isSatisfied = false;
+                for(int m = 0; m < data.n; m++){
+                    if(cplex.getValue(b[i][j][m]) >= 0.1){
+                        isSatisfied = true;
+                        break; // achou caminho, já conta como satisfeito
                     }
+                }
+                
+                if(isSatisfied) {
+                    satisfiedPairs++;
                 }
             }
         }
+        double percentDemand = ((double)satisfiedPairs / totalPairs) * 100.0;        
+
 
         // RESULTADOS 
 
         // salvar resultados em arquivo
         FILE *re;
         re = fopen("my_results.txt","aw+"); 
+
+        vector<int> hubs;
+        for(int j = 0; j < data.n; j++){
+            if(cplex.getValue(x[j][j]) >= 0.1){
+                hubs.push_back(j + 1); 
+            }
+        }
         
         fprintf(re, "Informações Gerais: %s | %d | %.1f | %.0f | %.0f | %.0f \n", argv[1], data.n, data.alpha, data.r[0][0], data.s[0], data.g[0][0]);
         fprintf(re, "Valor função objetivo: %f\t \n", (double) cplex.getObjValue());
-        fprintf(re, "Demanda Satisfeita: %f (%f%%)\t \n", satisfiedDemand, (satisfiedDemand / totalDemand) * 100.0);
+        fprintf(re, "Demanda Satisfeita: %d pares (%.2f%%)\t \n", satisfiedPairs, percentDemand);        
         fprintf(re, "Tempo de CPU: %f\t \n", (double) timer.getTime());
-        
-        fprintf(re, "Hubs: \n" );
-        for(int j = 0; j < data.n; j++){
-            if( cplex.getValue(x[j][j]) >= 0.1){
-                fprintf(re, "%d\t \n", j+1);
-            }
+        fprintf(re, "Hubs: " );
+        for(int hub : hubs) {
+            fprintf(re, "%d\t ", hub);
         }
-        fprintf(re, "======================================================================\n");
+
+        fprintf(re, "\n======================================================================\n");
         fclose(re); 
 
         // mostrar resultados no terminal
-        cout << "\nFunção objetivo: " << cplex.getObjValue () << endl ;
-		cout << "Tamanho da rede (n)   : " << data.n << endl;
-        cout << "Fator de desconto     : " << data.alpha << endl;
-        cout << "Gap de Otimalidade    : " << (100 * gap) << " %" << endl;
-		cout << "Tempo de CPU: " << (double)timer.getTime() << endl;
-        cout << "Demanda Total da Rede : " << totalDemand << endl;
-        cout << "Demanda Satisfeita    : " << satisfiedDemand << " (" 
-             << (satisfiedDemand / totalDemand) * 100.0 << "%)" << endl;
-
-        printf("Hubs Instalados:");
-        for(int k = 0; k < data.n; k++){
-          if( cplex.getValue(x[k][k]) >= 0.1){
-            printf(" %d\t ", k+1);
-          }
+        cout << "\nFunção objetivo     : " << cplex.getObjValue () << endl ;
+		cout << "Tamanho da rede (n) : " << data.n << endl;
+        cout << "Fator de desconto   : " << data.alpha << endl;
+        cout << "Gap de Otimalidade  : " << (100 * gap) << " %" << endl;
+		cout << "Tempo de CPU        : " << (double)timer.getTime() << endl;
+        cout << "Demanda Satisfeita  : " << satisfiedPairs << " pares (" << fixed << setprecision(2) << percentDemand << "%)" << endl;        
+        cout << "Hubs Instalados     : ";
+        for(int hub : hubs) {
+            cout << hub << " ";
         }
         cout << endl;
-
+        
 		env.end();
 	}
     catch (IloException& ex) {
