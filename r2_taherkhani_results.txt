@@ -1,0 +1,216 @@
+Informações Gerais: cab.txt | 25 | 0.2 | 2000 | 50 | 5 
+Valor função objetivo: 1162.583364	 
+Demanda Satisfeita: 600 pares (100.00%)	 
+Tempo de CPU: 76700.370000	 
+Hubs: 4	 7	 12	 14	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 2000 | 50 | 5 
+Valor função objetivo: 1002.241727	 
+Demanda Satisfeita: 582 pares (97.00%)	 
+Tempo de CPU: 78670.120000	 
+Hubs: 4	 7	 12	 14	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 2000 | 50 | 5 
+Valor função objetivo: 884.846845	 
+Demanda Satisfeita: 547 pares (91.17%)	 
+Tempo de CPU: 74910.440000	 
+Hubs: 4	 12	 13	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 2000 | 50 | 5 
+Valor função objetivo: 827.618772	 
+Demanda Satisfeita: 524 pares (87.33%)	 
+Tempo de CPU: 77662.750000	 
+Hubs: 12	 17	 21	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 2000 | 100 | 10 
+Valor função objetivo: 911.265017	 
+Demanda Satisfeita: 594 pares (99.00%)	 
+Tempo de CPU: 20105.570000	 
+Hubs: 4	 12	 17	 24	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 2000 | 100 | 10 
+Valor função objetivo: 803.728520	 
+Demanda Satisfeita: 556 pares (92.67%)	 
+Tempo de CPU: 28787.550000	 
+Hubs: 4	 12	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 2000 | 100 | 10 
+Valor função objetivo: 717.230604	 
+Demanda Satisfeita: 532 pares (88.67%)	 
+Tempo de CPU: 24816.260000	 
+Hubs: 4	 12	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 2000 | 100 | 10 
+Valor função objetivo: 683.208564	 
+Demanda Satisfeita: 475 pares (79.17%)	 
+Tempo de CPU: 81619.280000	 
+Hubs: 18	 21	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 2000 | 150 | 15 
+Valor função objetivo: 738.082111	 
+Demanda Satisfeita: 582 pares (97.00%)	 
+Tempo de CPU: 3049.430000	 
+Hubs: 4	 12	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 2000 | 150 | 15 
+Valor função objetivo: 633.728477	 
+Demanda Satisfeita: 556 pares (92.67%)	 
+Tempo de CPU: 13036.760000	 
+Hubs: 4	 12	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 2000 | 150 | 15 
+Valor função objetivo: 599.175265	 
+Demanda Satisfeita: 400 pares (66.67%)	 
+Tempo de CPU: 2930.520000	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 2000 | 150 | 15 
+Valor função objetivo: 599.175265	 
+Demanda Satisfeita: 400 pares (66.67%)	 
+Tempo de CPU: 1719.550000	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 1500 | 50 | 5 
+Valor função objetivo: 665.454168	 
+Demanda Satisfeita: 564 pares (94.00%)	 
+Tempo de CPU: 30925.740000	 
+Hubs: 4	 7	 12	 14	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 1500 | 50 | 5 
+Valor função objetivo: 516.694778	 
+Demanda Satisfeita: 504 pares (84.00%)	 
+Tempo de CPU: 79843.020000	 
+Hubs: 4	 12	 17	 24	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 1500 | 50 | 5 
+Valor função objetivo: 439.142899	 
+Demanda Satisfeita: 410 pares (68.33%)	 
+Tempo de CPU: 37860.800000	 
+Hubs: 4	 12	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 1500 | 50 | 5 
+Valor função objetivo: 424.727284	 
+Demanda Satisfeita: 366 pares (61.00%)	 
+Tempo de CPU: 23239.840000	 
+Hubs: 4	 18	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 1500 | 100 | 10 
+Valor função objetivo: 426.894536	 
+Demanda Satisfeita: 498 pares (83.00%)	 
+Tempo de CPU: 2482.990000	 
+Hubs: 4	 12	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 1500 | 100 | 10 
+Valor função objetivo: 348.399089	 
+Demanda Satisfeita: 378 pares (63.00%)	 
+Tempo de CPU: 1496.250000	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 1500 | 100 | 10 
+Valor função objetivo: 327.822088	 
+Demanda Satisfeita: 368 pares (61.33%)	 
+Tempo de CPU: 1505.250000	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 1500 | 100 | 10 
+Valor função objetivo: 324.270556	 
+Demanda Satisfeita: 360 pares (60.00%)	 
+Tempo de CPU: 82646.490000	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 1500 | 150 | 15 
+Valor função objetivo: 266.413660	 
+Demanda Satisfeita: 378 pares (63.00%)	 
+Tempo de CPU: 1963.990000	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 1500 | 150 | 15 
+Valor função objetivo: 259.890777	 
+Demanda Satisfeita: 316 pares (52.67%)	 
+Tempo de CPU: 626.470000	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 1500 | 150 | 15 
+Valor função objetivo: 259.890777	 
+Demanda Satisfeita: 316 pares (52.67%)	 
+Tempo de CPU: 634.550000	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 1500 | 150 | 15 
+Valor função objetivo: 259.890777	 
+Demanda Satisfeita: 316 pares (52.67%)	 
+Tempo de CPU: 709.040000	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 1000 | 50 | 5 
+Valor função objetivo: 197.974566	 
+Demanda Satisfeita: 352 pares (58.67%)	 
+Tempo de CPU: 3735.090000	 
+Hubs: 4	 12	 14	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 1000 | 50 | 5 
+Valor função objetivo: 156.896443	 
+Demanda Satisfeita: 212 pares (35.33%)	 
+Tempo de CPU: 300.300000	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 1000 | 50 | 5 
+Valor função objetivo: 141.690716	 
+Demanda Satisfeita: 200 pares (33.33%)	 
+Tempo de CPU: 245.610000	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 1000 | 50 | 5 
+Valor função objetivo: 132.160753	 
+Demanda Satisfeita: 188 pares (31.33%)	 
+Tempo de CPU: 193.710000	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 1000 | 100 | 10 
+Valor função objetivo: 69.022384	 
+Demanda Satisfeita: 216 pares (36.00%)	 
+Tempo de CPU: 145.600000	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 1000 | 100 | 10 
+Valor função objetivo: 65.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 88.330000	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 1000 | 100 | 10 
+Valor função objetivo: 65.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 63.150000	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 1000 | 100 | 10 
+Valor função objetivo: 65.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 72.890000	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 1000 | 150 | 15 
+Valor função objetivo: 15.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 10.930000	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 1000 | 150 | 15 
+Valor função objetivo: 15.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 12.300000	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 1000 | 150 | 15 
+Valor função objetivo: 15.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 11.650000	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 1000 | 150 | 15 
+Valor função objetivo: 15.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 11.770000	 
+Hubs: 17	 
+======================================================================
