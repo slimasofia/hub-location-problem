@@ -1,0 +1,1414 @@
+
+============================================================
+Teste: cab.txt | alpha: 0.8 | receita: 1000 | custo hub: 150 | custo link: 15
+Alocações:
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 17
+Nó 5 -> Hub 17
+Nó 6 -> Hub 17
+Nó 9 -> Hub 17
+Nó 13 -> Hub 17
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 20 -> Hub 17
+Nó 21 -> Hub 17
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.6 | receita: 1000 | custo hub: 150 | custo link: 15
+Alocações:
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 17
+Nó 5 -> Hub 17
+Nó 6 -> Hub 17
+Nó 9 -> Hub 17
+Nó 13 -> Hub 17
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 20 -> Hub 17
+Nó 21 -> Hub 17
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.4 | receita: 1000 | custo hub: 150 | custo link: 15
+Alocações:
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 17
+Nó 5 -> Hub 17
+Nó 6 -> Hub 17
+Nó 9 -> Hub 17
+Nó 13 -> Hub 17
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 20 -> Hub 17
+Nó 21 -> Hub 17
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.2 | receita: 1000 | custo hub: 150 | custo link: 15
+Alocações:
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 17
+Nó 5 -> Hub 17
+Nó 6 -> Hub 17
+Nó 9 -> Hub 17
+Nó 13 -> Hub 17
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 20 -> Hub 17
+Nó 21 -> Hub 17
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.8 | receita: 1000 | custo hub: 100 | custo link: 10
+Alocações:
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 17
+Nó 5 -> Hub 17
+Nó 6 -> Hub 17
+Nó 9 -> Hub 17
+Nó 13 -> Hub 17
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 20 -> Hub 17
+Nó 21 -> Hub 17
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.6 | receita: 1000 | custo hub: 100 | custo link: 10
+Alocações:
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 17
+Nó 5 -> Hub 17
+Nó 6 -> Hub 17
+Nó 9 -> Hub 17
+Nó 13 -> Hub 17
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 20 -> Hub 17
+Nó 21 -> Hub 17
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.4 | receita: 1000 | custo hub: 100 | custo link: 10
+Alocações:
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 17
+Nó 5 -> Hub 17
+Nó 6 -> Hub 17
+Nó 9 -> Hub 17
+Nó 13 -> Hub 17
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 20 -> Hub 17
+Nó 21 -> Hub 17
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.2 | receita: 1000 | custo hub: 100 | custo link: 10
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 4 -> Hub 17
+Nó 5 -> Hub 4
+Nó 5 -> Hub 17
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 8 -> Hub 4
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 11 -> Hub 4
+Nó 13 -> Hub 4
+Nó 13 -> Hub 17
+Nó 15 -> Hub 4
+Nó 16 -> Hub 4
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 21 -> Hub 17
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.8 | receita: 1000 | custo hub: 50 | custo link: 5
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 17
+Nó 2 -> Hub 4
+Nó 2 -> Hub 17
+Nó 3 -> Hub 4
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 4 -> Hub 17
+Nó 5 -> Hub 4
+Nó 5 -> Hub 17
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 7 -> Hub 17
+Nó 8 -> Hub 4
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 10 -> Hub 17
+Nó 11 -> Hub 4
+Nó 11 -> Hub 17
+Nó 12 -> Hub 4
+Nó 12 -> Hub 17
+Nó 13 -> Hub 4
+Nó 13 -> Hub 17
+Nó 14 -> Hub 4
+Nó 14 -> Hub 17
+Nó 15 -> Hub 4
+Nó 15 -> Hub 17
+Nó 16 -> Hub 4
+Nó 16 -> Hub 17
+Nó 17 -> Hub 4
+Nó 17 -> Hub 17
+Nó 18 -> Hub 4
+Nó 18 -> Hub 17
+Nó 19 -> Hub 4
+Nó 19 -> Hub 17
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 21 -> Hub 17
+Nó 22 -> Hub 4
+Nó 22 -> Hub 17
+Nó 24 -> Hub 4
+Nó 24 -> Hub 17
+Nó 25 -> Hub 4
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.6 | receita: 1000 | custo hub: 50 | custo link: 5
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 17
+Nó 2 -> Hub 4
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 4 -> Hub 17
+Nó 5 -> Hub 4
+Nó 5 -> Hub 17
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 8 -> Hub 4
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 11 -> Hub 4
+Nó 13 -> Hub 4
+Nó 15 -> Hub 4
+Nó 16 -> Hub 4
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 25 -> Hub 4
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.4 | receita: 1000 | custo hub: 50 | custo link: 5
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 5 -> Hub 4
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 8 -> Hub 4
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 11 -> Hub 4
+Nó 13 -> Hub 4
+Nó 15 -> Hub 4
+Nó 16 -> Hub 4
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.2 | receita: 1000 | custo hub: 50 | custo link: 5
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 14
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 5 -> Hub 4
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 8 -> Hub 4
+Nó 8 -> Hub 12
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 10 -> Hub 14
+Nó 11 -> Hub 4
+Nó 12 -> Hub 12
+Nó 13 -> Hub 4
+Nó 13 -> Hub 14
+Nó 14 -> Hub 14
+Nó 15 -> Hub 4
+Nó 16 -> Hub 4
+Nó 16 -> Hub 14
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 19 -> Hub 12
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 22 -> Hub 12
+Nó 23 -> Hub 12
+Nó 24 -> Hub 14
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.8 | receita: 1500 | custo hub: 150 | custo link: 15
+Alocações:
+Nó 1 -> Hub 20
+Nó 2 -> Hub 20
+Nó 3 -> Hub 20
+Nó 4 -> Hub 20
+Nó 5 -> Hub 20
+Nó 6 -> Hub 20
+Nó 7 -> Hub 20
+Nó 8 -> Hub 20
+Nó 9 -> Hub 20
+Nó 10 -> Hub 20
+Nó 11 -> Hub 20
+Nó 12 -> Hub 20
+Nó 13 -> Hub 20
+Nó 14 -> Hub 20
+Nó 15 -> Hub 20
+Nó 16 -> Hub 20
+Nó 17 -> Hub 20
+Nó 18 -> Hub 20
+Nó 19 -> Hub 20
+Nó 20 -> Hub 20
+Nó 21 -> Hub 20
+Nó 24 -> Hub 20
+Nó 25 -> Hub 20
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.6 | receita: 1500 | custo hub: 150 | custo link: 15
+Alocações:
+Nó 1 -> Hub 20
+Nó 2 -> Hub 20
+Nó 3 -> Hub 20
+Nó 4 -> Hub 20
+Nó 5 -> Hub 20
+Nó 6 -> Hub 20
+Nó 7 -> Hub 20
+Nó 8 -> Hub 20
+Nó 9 -> Hub 20
+Nó 10 -> Hub 20
+Nó 11 -> Hub 20
+Nó 12 -> Hub 20
+Nó 13 -> Hub 20
+Nó 14 -> Hub 20
+Nó 15 -> Hub 20
+Nó 16 -> Hub 20
+Nó 17 -> Hub 20
+Nó 18 -> Hub 20
+Nó 19 -> Hub 20
+Nó 20 -> Hub 20
+Nó 21 -> Hub 20
+Nó 22 -> Hub 20
+Nó 23 -> Hub 20
+Nó 24 -> Hub 20
+Nó 25 -> Hub 20
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.4 | receita: 1500 | custo hub: 150 | custo link: 15
+Alocações:
+Nó 1 -> Hub 20
+Nó 2 -> Hub 20
+Nó 3 -> Hub 20
+Nó 4 -> Hub 20
+Nó 5 -> Hub 20
+Nó 6 -> Hub 20
+Nó 7 -> Hub 20
+Nó 8 -> Hub 20
+Nó 9 -> Hub 20
+Nó 10 -> Hub 20
+Nó 11 -> Hub 20
+Nó 13 -> Hub 20
+Nó 14 -> Hub 20
+Nó 15 -> Hub 20
+Nó 16 -> Hub 20
+Nó 17 -> Hub 20
+Nó 18 -> Hub 20
+Nó 20 -> Hub 20
+Nó 21 -> Hub 20
+Nó 24 -> Hub 20
+Nó 25 -> Hub 20
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.2 | receita: 1500 | custo hub: 150 | custo link: 15
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 17
+Nó 2 -> Hub 4
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 4 -> Hub 17
+Nó 5 -> Hub 4
+Nó 5 -> Hub 17
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 7 -> Hub 17
+Nó 8 -> Hub 4
+Nó 8 -> Hub 17
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 10 -> Hub 17
+Nó 11 -> Hub 4
+Nó 11 -> Hub 17
+Nó 13 -> Hub 4
+Nó 13 -> Hub 17
+Nó 14 -> Hub 4
+Nó 14 -> Hub 17
+Nó 15 -> Hub 4
+Nó 15 -> Hub 17
+Nó 16 -> Hub 4
+Nó 16 -> Hub 17
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 19 -> Hub 4
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 21 -> Hub 17
+Nó 24 -> Hub 4
+Nó 24 -> Hub 17
+Nó 25 -> Hub 4
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.8 | receita: 1500 | custo hub: 100 | custo link: 10
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 18
+Nó 2 -> Hub 4
+Nó 2 -> Hub 18
+Nó 3 -> Hub 4
+Nó 3 -> Hub 18
+Nó 4 -> Hub 4
+Nó 4 -> Hub 18
+Nó 5 -> Hub 4
+Nó 5 -> Hub 18
+Nó 6 -> Hub 4
+Nó 6 -> Hub 18
+Nó 7 -> Hub 4
+Nó 7 -> Hub 18
+Nó 8 -> Hub 4
+Nó 9 -> Hub 4
+Nó 9 -> Hub 18
+Nó 10 -> Hub 4
+Nó 10 -> Hub 18
+Nó 11 -> Hub 4
+Nó 11 -> Hub 18
+Nó 12 -> Hub 4
+Nó 13 -> Hub 4
+Nó 13 -> Hub 18
+Nó 14 -> Hub 4
+Nó 14 -> Hub 18
+Nó 15 -> Hub 4
+Nó 15 -> Hub 18
+Nó 16 -> Hub 4
+Nó 16 -> Hub 18
+Nó 17 -> Hub 4
+Nó 17 -> Hub 18
+Nó 18 -> Hub 18
+Nó 19 -> Hub 4
+Nó 20 -> Hub 4
+Nó 20 -> Hub 18
+Nó 21 -> Hub 4
+Nó 21 -> Hub 18
+Nó 22 -> Hub 4
+Nó 23 -> Hub 4
+Nó 24 -> Hub 4
+Nó 24 -> Hub 18
+Nó 25 -> Hub 4
+Nó 25 -> Hub 18
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.6 | receita: 1500 | custo hub: 100 | custo link: 10
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 4
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 4 -> Hub 17
+Nó 5 -> Hub 4
+Nó 5 -> Hub 17
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 7 -> Hub 17
+Nó 8 -> Hub 4
+Nó 8 -> Hub 17
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 10 -> Hub 17
+Nó 11 -> Hub 4
+Nó 11 -> Hub 17
+Nó 12 -> Hub 4
+Nó 12 -> Hub 17
+Nó 13 -> Hub 4
+Nó 13 -> Hub 17
+Nó 14 -> Hub 4
+Nó 14 -> Hub 17
+Nó 15 -> Hub 4
+Nó 15 -> Hub 17
+Nó 16 -> Hub 4
+Nó 16 -> Hub 17
+Nó 17 -> Hub 4
+Nó 17 -> Hub 17
+Nó 18 -> Hub 4
+Nó 18 -> Hub 17
+Nó 19 -> Hub 4
+Nó 19 -> Hub 17
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 21 -> Hub 17
+Nó 22 -> Hub 4
+Nó 22 -> Hub 17
+Nó 23 -> Hub 4
+Nó 23 -> Hub 17
+Nó 24 -> Hub 4
+Nó 24 -> Hub 17
+Nó 25 -> Hub 4
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.4 | receita: 1500 | custo hub: 100 | custo link: 10
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 5 -> Hub 4
+Nó 5 -> Hub 17
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 8 -> Hub 4
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 11 -> Hub 4
+Nó 13 -> Hub 4
+Nó 14 -> Hub 4
+Nó 14 -> Hub 17
+Nó 15 -> Hub 4
+Nó 16 -> Hub 4
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 19 -> Hub 4
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 24 -> Hub 4
+Nó 24 -> Hub 17
+Nó 25 -> Hub 4
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.2 | receita: 1500 | custo hub: 100 | custo link: 10
+Alocações:
+Nó 1 -> Hub 4
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 5 -> Hub 4
+Nó 5 -> Hub 17
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 8 -> Hub 4
+Nó 8 -> Hub 12
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 10 -> Hub 12
+Nó 11 -> Hub 4
+Nó 12 -> Hub 12
+Nó 13 -> Hub 4
+Nó 14 -> Hub 4
+Nó 14 -> Hub 17
+Nó 15 -> Hub 4
+Nó 16 -> Hub 4
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 19 -> Hub 12
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 22 -> Hub 12
+Nó 23 -> Hub 12
+Nó 24 -> Hub 4
+Nó 24 -> Hub 17
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.8 | receita: 1500 | custo hub: 50 | custo link: 5
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 18
+Nó 2 -> Hub 4
+Nó 2 -> Hub 18
+Nó 3 -> Hub 4
+Nó 3 -> Hub 18
+Nó 4 -> Hub 4
+Nó 4 -> Hub 18
+Nó 5 -> Hub 4
+Nó 5 -> Hub 18
+Nó 6 -> Hub 4
+Nó 6 -> Hub 18
+Nó 7 -> Hub 4
+Nó 7 -> Hub 18
+Nó 8 -> Hub 4
+Nó 9 -> Hub 4
+Nó 9 -> Hub 18
+Nó 10 -> Hub 4
+Nó 10 -> Hub 18
+Nó 11 -> Hub 4
+Nó 11 -> Hub 18
+Nó 12 -> Hub 4
+Nó 13 -> Hub 4
+Nó 13 -> Hub 18
+Nó 14 -> Hub 4
+Nó 14 -> Hub 18
+Nó 15 -> Hub 4
+Nó 15 -> Hub 18
+Nó 16 -> Hub 4
+Nó 16 -> Hub 18
+Nó 17 -> Hub 4
+Nó 17 -> Hub 18
+Nó 18 -> Hub 4
+Nó 18 -> Hub 18
+Nó 19 -> Hub 4
+Nó 20 -> Hub 4
+Nó 20 -> Hub 18
+Nó 21 -> Hub 4
+Nó 21 -> Hub 18
+Nó 24 -> Hub 4
+Nó 24 -> Hub 18
+Nó 25 -> Hub 4
+Nó 25 -> Hub 18
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.6 | receita: 1500 | custo hub: 50 | custo link: 5
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 17
+Nó 2 -> Hub 4
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 5 -> Hub 4
+Nó 5 -> Hub 17
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 7 -> Hub 12
+Nó 8 -> Hub 4
+Nó 8 -> Hub 12
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 10 -> Hub 12
+Nó 10 -> Hub 17
+Nó 11 -> Hub 4
+Nó 11 -> Hub 12
+Nó 11 -> Hub 17
+Nó 12 -> Hub 4
+Nó 12 -> Hub 12
+Nó 13 -> Hub 4
+Nó 13 -> Hub 17
+Nó 14 -> Hub 4
+Nó 14 -> Hub 17
+Nó 15 -> Hub 4
+Nó 15 -> Hub 12
+Nó 15 -> Hub 17
+Nó 16 -> Hub 4
+Nó 16 -> Hub 17
+Nó 17 -> Hub 4
+Nó 17 -> Hub 17
+Nó 18 -> Hub 4
+Nó 18 -> Hub 17
+Nó 19 -> Hub 4
+Nó 19 -> Hub 12
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 22 -> Hub 12
+Nó 23 -> Hub 12
+Nó 24 -> Hub 4
+Nó 24 -> Hub 17
+Nó 25 -> Hub 4
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.4 | receita: 1500 | custo hub: 50 | custo link: 5
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 14
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 4 -> Hub 17
+Nó 5 -> Hub 4
+Nó 5 -> Hub 14
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 7 -> Hub 12
+Nó 7 -> Hub 14
+Nó 8 -> Hub 4
+Nó 8 -> Hub 12
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 10 -> Hub 12
+Nó 10 -> Hub 14
+Nó 11 -> Hub 4
+Nó 12 -> Hub 12
+Nó 13 -> Hub 4
+Nó 13 -> Hub 14
+Nó 13 -> Hub 17
+Nó 14 -> Hub 4
+Nó 14 -> Hub 14
+Nó 15 -> Hub 4
+Nó 16 -> Hub 4
+Nó 16 -> Hub 14
+Nó 17 -> Hub 4
+Nó 17 -> Hub 14
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 19 -> Hub 12
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 22 -> Hub 12
+Nó 22 -> Hub 17
+Nó 23 -> Hub 12
+Nó 24 -> Hub 4
+Nó 24 -> Hub 14
+Nó 24 -> Hub 17
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.2 | receita: 1500 | custo hub: 50 | custo link: 5
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 7
+Nó 1 -> Hub 14
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 5 -> Hub 4
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 7 -> Hub 7
+Nó 8 -> Hub 4
+Nó 8 -> Hub 7
+Nó 8 -> Hub 12
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 7
+Nó 11 -> Hub 4
+Nó 11 -> Hub 7
+Nó 12 -> Hub 12
+Nó 13 -> Hub 4
+Nó 13 -> Hub 7
+Nó 14 -> Hub 14
+Nó 15 -> Hub 4
+Nó 16 -> Hub 7
+Nó 16 -> Hub 14
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 19 -> Hub 12
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 21 -> Hub 7
+Nó 22 -> Hub 12
+Nó 23 -> Hub 12
+Nó 24 -> Hub 14
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.8 | receita: 2000 | custo hub: 150 | custo link: 15
+Alocações:
+Nó 1 -> Hub 20
+Nó 2 -> Hub 20
+Nó 3 -> Hub 20
+Nó 4 -> Hub 20
+Nó 5 -> Hub 20
+Nó 6 -> Hub 20
+Nó 7 -> Hub 20
+Nó 8 -> Hub 20
+Nó 9 -> Hub 20
+Nó 10 -> Hub 20
+Nó 11 -> Hub 20
+Nó 12 -> Hub 20
+Nó 13 -> Hub 20
+Nó 14 -> Hub 20
+Nó 15 -> Hub 20
+Nó 16 -> Hub 20
+Nó 17 -> Hub 20
+Nó 18 -> Hub 20
+Nó 19 -> Hub 20
+Nó 20 -> Hub 20
+Nó 21 -> Hub 20
+Nó 22 -> Hub 20
+Nó 23 -> Hub 20
+Nó 24 -> Hub 20
+Nó 25 -> Hub 20
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.6 | receita: 2000 | custo hub: 150 | custo link: 15
+Alocações:
+Nó 1 -> Hub 20
+Nó 2 -> Hub 20
+Nó 3 -> Hub 20
+Nó 4 -> Hub 20
+Nó 5 -> Hub 20
+Nó 6 -> Hub 20
+Nó 7 -> Hub 20
+Nó 8 -> Hub 20
+Nó 9 -> Hub 20
+Nó 10 -> Hub 20
+Nó 11 -> Hub 20
+Nó 13 -> Hub 20
+Nó 14 -> Hub 20
+Nó 15 -> Hub 20
+Nó 16 -> Hub 20
+Nó 17 -> Hub 20
+Nó 18 -> Hub 20
+Nó 19 -> Hub 20
+Nó 20 -> Hub 20
+Nó 21 -> Hub 20
+Nó 24 -> Hub 20
+Nó 25 -> Hub 20
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.4 | receita: 2000 | custo hub: 150 | custo link: 15
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 5 -> Hub 4
+Nó 5 -> Hub 17
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 7 -> Hub 12
+Nó 8 -> Hub 4
+Nó 8 -> Hub 12
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 10 -> Hub 12
+Nó 11 -> Hub 4
+Nó 12 -> Hub 4
+Nó 12 -> Hub 12
+Nó 13 -> Hub 4
+Nó 14 -> Hub 4
+Nó 14 -> Hub 17
+Nó 15 -> Hub 4
+Nó 16 -> Hub 4
+Nó 16 -> Hub 12
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 19 -> Hub 4
+Nó 19 -> Hub 12
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 22 -> Hub 12
+Nó 23 -> Hub 4
+Nó 23 -> Hub 12
+Nó 24 -> Hub 4
+Nó 24 -> Hub 17
+Nó 25 -> Hub 4
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.2 | receita: 2000 | custo hub: 150 | custo link: 15
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 12
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 4 -> Hub 12
+Nó 4 -> Hub 17
+Nó 5 -> Hub 4
+Nó 5 -> Hub 12
+Nó 5 -> Hub 17
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 7 -> Hub 12
+Nó 7 -> Hub 17
+Nó 8 -> Hub 4
+Nó 8 -> Hub 12
+Nó 8 -> Hub 17
+Nó 9 -> Hub 4
+Nó 9 -> Hub 12
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 10 -> Hub 12
+Nó 10 -> Hub 17
+Nó 11 -> Hub 4
+Nó 11 -> Hub 12
+Nó 11 -> Hub 17
+Nó 12 -> Hub 12
+Nó 12 -> Hub 17
+Nó 13 -> Hub 4
+Nó 13 -> Hub 12
+Nó 13 -> Hub 17
+Nó 14 -> Hub 4
+Nó 14 -> Hub 17
+Nó 15 -> Hub 4
+Nó 15 -> Hub 12
+Nó 15 -> Hub 17
+Nó 16 -> Hub 4
+Nó 16 -> Hub 12
+Nó 16 -> Hub 17
+Nó 17 -> Hub 12
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 19 -> Hub 12
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 21 -> Hub 12
+Nó 21 -> Hub 17
+Nó 22 -> Hub 12
+Nó 22 -> Hub 17
+Nó 23 -> Hub 12
+Nó 23 -> Hub 17
+Nó 24 -> Hub 4
+Nó 24 -> Hub 17
+Nó 25 -> Hub 12
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.8 | receita: 2000 | custo hub: 100 | custo link: 10
+Alocações:
+Nó 1 -> Hub 18
+Nó 1 -> Hub 21
+Nó 2 -> Hub 18
+Nó 2 -> Hub 21
+Nó 3 -> Hub 18
+Nó 3 -> Hub 21
+Nó 4 -> Hub 18
+Nó 4 -> Hub 21
+Nó 5 -> Hub 18
+Nó 5 -> Hub 21
+Nó 6 -> Hub 18
+Nó 6 -> Hub 21
+Nó 7 -> Hub 18
+Nó 7 -> Hub 21
+Nó 8 -> Hub 18
+Nó 8 -> Hub 21
+Nó 9 -> Hub 18
+Nó 9 -> Hub 21
+Nó 10 -> Hub 18
+Nó 10 -> Hub 21
+Nó 11 -> Hub 18
+Nó 11 -> Hub 21
+Nó 12 -> Hub 21
+Nó 13 -> Hub 18
+Nó 13 -> Hub 21
+Nó 14 -> Hub 18
+Nó 14 -> Hub 21
+Nó 15 -> Hub 18
+Nó 15 -> Hub 21
+Nó 16 -> Hub 18
+Nó 16 -> Hub 21
+Nó 17 -> Hub 18
+Nó 17 -> Hub 21
+Nó 18 -> Hub 18
+Nó 18 -> Hub 21
+Nó 19 -> Hub 18
+Nó 19 -> Hub 21
+Nó 20 -> Hub 18
+Nó 20 -> Hub 21
+Nó 21 -> Hub 18
+Nó 21 -> Hub 21
+Nó 22 -> Hub 21
+Nó 23 -> Hub 21
+Nó 24 -> Hub 18
+Nó 24 -> Hub 21
+Nó 25 -> Hub 18
+Nó 25 -> Hub 21
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.6 | receita: 2000 | custo hub: 100 | custo link: 10
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 12
+Nó 1 -> Hub 17
+Nó 2 -> Hub 4
+Nó 2 -> Hub 12
+Nó 2 -> Hub 17
+Nó 3 -> Hub 12
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 4 -> Hub 12
+Nó 4 -> Hub 17
+Nó 5 -> Hub 4
+Nó 5 -> Hub 12
+Nó 5 -> Hub 17
+Nó 6 -> Hub 4
+Nó 6 -> Hub 12
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 7 -> Hub 12
+Nó 8 -> Hub 4
+Nó 8 -> Hub 12
+Nó 9 -> Hub 4
+Nó 9 -> Hub 12
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 10 -> Hub 12
+Nó 11 -> Hub 4
+Nó 11 -> Hub 12
+Nó 12 -> Hub 12
+Nó 13 -> Hub 4
+Nó 13 -> Hub 12
+Nó 13 -> Hub 17
+Nó 14 -> Hub 4
+Nó 14 -> Hub 17
+Nó 15 -> Hub 4
+Nó 15 -> Hub 12
+Nó 15 -> Hub 17
+Nó 16 -> Hub 4
+Nó 16 -> Hub 12
+Nó 16 -> Hub 17
+Nó 17 -> Hub 12
+Nó 17 -> Hub 17
+Nó 18 -> Hub 12
+Nó 18 -> Hub 17
+Nó 19 -> Hub 4
+Nó 19 -> Hub 12
+Nó 20 -> Hub 4
+Nó 20 -> Hub 12
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 21 -> Hub 12
+Nó 22 -> Hub 12
+Nó 23 -> Hub 4
+Nó 23 -> Hub 12
+Nó 24 -> Hub 4
+Nó 24 -> Hub 17
+Nó 25 -> Hub 4
+Nó 25 -> Hub 12
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.4 | receita: 2000 | custo hub: 100 | custo link: 10
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 5 -> Hub 4
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 7 -> Hub 12
+Nó 8 -> Hub 4
+Nó 8 -> Hub 12
+Nó 9 -> Hub 4
+Nó 9 -> Hub 12
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 10 -> Hub 12
+Nó 11 -> Hub 4
+Nó 12 -> Hub 12
+Nó 13 -> Hub 4
+Nó 14 -> Hub 4
+Nó 14 -> Hub 17
+Nó 15 -> Hub 4
+Nó 15 -> Hub 12
+Nó 16 -> Hub 4
+Nó 16 -> Hub 17
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 19 -> Hub 12
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 22 -> Hub 12
+Nó 23 -> Hub 12
+Nó 24 -> Hub 4
+Nó 24 -> Hub 17
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.2 | receita: 2000 | custo hub: 100 | custo link: 10
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 17
+Nó 1 -> Hub 24
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 4 -> Hub 17
+Nó 5 -> Hub 4
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 7 -> Hub 24
+Nó 8 -> Hub 4
+Nó 8 -> Hub 12
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 4
+Nó 10 -> Hub 12
+Nó 10 -> Hub 24
+Nó 11 -> Hub 4
+Nó 11 -> Hub 17
+Nó 12 -> Hub 12
+Nó 13 -> Hub 4
+Nó 13 -> Hub 24
+Nó 14 -> Hub 17
+Nó 14 -> Hub 24
+Nó 15 -> Hub 4
+Nó 15 -> Hub 17
+Nó 16 -> Hub 4
+Nó 16 -> Hub 24
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 19 -> Hub 12
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 21 -> Hub 17
+Nó 22 -> Hub 12
+Nó 22 -> Hub 17
+Nó 23 -> Hub 12
+Nó 24 -> Hub 17
+Nó 24 -> Hub 24
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.8 | receita: 2000 | custo hub: 50 | custo link: 5
+Alocações:
+Nó 1 -> Hub 1
+Nó 1 -> Hub 12
+Nó 1 -> Hub 17
+Nó 2 -> Hub 1
+Nó 2 -> Hub 4
+Nó 2 -> Hub 17
+Nó 3 -> Hub 1
+Nó 3 -> Hub 4
+Nó 3 -> Hub 17
+Nó 4 -> Hub 1
+Nó 4 -> Hub 4
+Nó 4 -> Hub 17
+Nó 5 -> Hub 1
+Nó 5 -> Hub 4
+Nó 5 -> Hub 17
+Nó 6 -> Hub 1
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 1
+Nó 7 -> Hub 4
+Nó 7 -> Hub 12
+Nó 8 -> Hub 1
+Nó 8 -> Hub 4
+Nó 8 -> Hub 12
+Nó 9 -> Hub 1
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 1
+Nó 10 -> Hub 4
+Nó 10 -> Hub 12
+Nó 11 -> Hub 1
+Nó 11 -> Hub 4
+Nó 11 -> Hub 12
+Nó 12 -> Hub 12
+Nó 13 -> Hub 1
+Nó 13 -> Hub 4
+Nó 13 -> Hub 12
+Nó 14 -> Hub 1
+Nó 14 -> Hub 4
+Nó 14 -> Hub 17
+Nó 15 -> Hub 1
+Nó 15 -> Hub 4
+Nó 15 -> Hub 12
+Nó 16 -> Hub 1
+Nó 16 -> Hub 4
+Nó 16 -> Hub 12
+Nó 17 -> Hub 1
+Nó 17 -> Hub 17
+Nó 18 -> Hub 1
+Nó 18 -> Hub 4
+Nó 18 -> Hub 17
+Nó 19 -> Hub 1
+Nó 19 -> Hub 4
+Nó 19 -> Hub 12
+Nó 20 -> Hub 1
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 1
+Nó 21 -> Hub 4
+Nó 21 -> Hub 12
+Nó 22 -> Hub 12
+Nó 23 -> Hub 4
+Nó 23 -> Hub 12
+Nó 24 -> Hub 1
+Nó 24 -> Hub 4
+Nó 24 -> Hub 17
+Nó 25 -> Hub 1
+Nó 25 -> Hub 4
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.4 | receita: 2000 | custo hub: 50 | custo link: 5
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 14
+Nó 1 -> Hub 17
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 4 -> Hub 17
+Nó 5 -> Hub 4
+Nó 5 -> Hub 14
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 4
+Nó 7 -> Hub 7
+Nó 8 -> Hub 4
+Nó 8 -> Hub 7
+Nó 8 -> Hub 12
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 7
+Nó 10 -> Hub 14
+Nó 11 -> Hub 4
+Nó 11 -> Hub 7
+Nó 12 -> Hub 7
+Nó 12 -> Hub 12
+Nó 13 -> Hub 4
+Nó 13 -> Hub 7
+Nó 13 -> Hub 14
+Nó 14 -> Hub 14
+Nó 15 -> Hub 4
+Nó 16 -> Hub 7
+Nó 16 -> Hub 14
+Nó 17 -> Hub 17
+Nó 18 -> Hub 4
+Nó 18 -> Hub 17
+Nó 19 -> Hub 7
+Nó 19 -> Hub 12
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 21 -> Hub 7
+Nó 22 -> Hub 12
+Nó 23 -> Hub 7
+Nó 23 -> Hub 12
+Nó 24 -> Hub 7
+Nó 24 -> Hub 14
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.2 | receita: 2000 | custo hub: 50 | custo link: 5
+Alocações:
+Nó 1 -> Hub 4
+Nó 1 -> Hub 7
+Nó 1 -> Hub 14
+Nó 2 -> Hub 4
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 4
+Nó 5 -> Hub 4
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 7
+Nó 7 -> Hub 14
+Nó 8 -> Hub 4
+Nó 8 -> Hub 7
+Nó 8 -> Hub 12
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 7
+Nó 11 -> Hub 4
+Nó 11 -> Hub 7
+Nó 12 -> Hub 12
+Nó 13 -> Hub 4
+Nó 13 -> Hub 7
+Nó 14 -> Hub 14
+Nó 15 -> Hub 4
+Nó 15 -> Hub 7
+Nó 16 -> Hub 4
+Nó 16 -> Hub 7
+Nó 16 -> Hub 14
+Nó 17 -> Hub 17
+Nó 18 -> Hub 17
+Nó 19 -> Hub 12
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 4
+Nó 21 -> Hub 7
+Nó 22 -> Hub 12
+Nó 23 -> Hub 12
+Nó 24 -> Hub 7
+Nó 24 -> Hub 14
+Nó 25 -> Hub 17
+============================================================
+
+============================================================
+Teste: cab.txt | alpha: 0.6 | receita: 2000 | custo hub: 50 | custo link: 5
+Alocações:
+Nó 1 -> Hub 1
+Nó 1 -> Hub 4
+Nó 2 -> Hub 1
+Nó 2 -> Hub 17
+Nó 3 -> Hub 17
+Nó 4 -> Hub 1
+Nó 4 -> Hub 4
+Nó 5 -> Hub 1
+Nó 5 -> Hub 4
+Nó 5 -> Hub 17
+Nó 6 -> Hub 1
+Nó 6 -> Hub 4
+Nó 6 -> Hub 17
+Nó 7 -> Hub 1
+Nó 7 -> Hub 4
+Nó 7 -> Hub 12
+Nó 8 -> Hub 1
+Nó 8 -> Hub 4
+Nó 8 -> Hub 12
+Nó 9 -> Hub 1
+Nó 9 -> Hub 4
+Nó 9 -> Hub 17
+Nó 10 -> Hub 1
+Nó 10 -> Hub 4
+Nó 10 -> Hub 12
+Nó 11 -> Hub 1
+Nó 11 -> Hub 4
+Nó 11 -> Hub 12
+Nó 12 -> Hub 12
+Nó 12 -> Hub 17
+Nó 13 -> Hub 1
+Nó 13 -> Hub 4
+Nó 14 -> Hub 1
+Nó 14 -> Hub 4
+Nó 15 -> Hub 1
+Nó 15 -> Hub 4
+Nó 16 -> Hub 1
+Nó 16 -> Hub 4
+Nó 16 -> Hub 12
+Nó 17 -> Hub 4
+Nó 17 -> Hub 17
+Nó 18 -> Hub 4
+Nó 18 -> Hub 17
+Nó 19 -> Hub 1
+Nó 19 -> Hub 12
+Nó 20 -> Hub 1
+Nó 20 -> Hub 4
+Nó 20 -> Hub 17
+Nó 21 -> Hub 1
+Nó 21 -> Hub 4
+Nó 22 -> Hub 4
+Nó 22 -> Hub 12
+Nó 23 -> Hub 4
+Nó 23 -> Hub 12
+Nó 24 -> Hub 1
+Nó 24 -> Hub 4
+Nó 25 -> Hub 1
+Nó 25 -> Hub 4
+Nó 25 -> Hub 17
+============================================================
