@@ -127,7 +127,72 @@ int main (int argc, char *argv[]) {
         fprintf(rx, "============================================================\n");
         fclose(rx);
 
-        // RESULTADOS 
+        // Salvar valores de a
+        FILE *ra;
+        ra = fopen("a_results.txt", "aw+");
+
+        fprintf(ra, "\n");
+        fprintf(ra, "============================================================\n");
+        fprintf(ra, "Teste: %s | alpha: %.1f | receita: %.0f | custo hub: %.0f | custo link: %.0f\n",
+                argv[1],
+                data.alpha,
+                data.r[0][0],
+                data.s[0],
+                data.g[0][0]);
+
+        fprintf(ra, "Valores de a:\n");
+
+        for(int i = 0; i < data.n; i++) {
+            for(int k = 0; k < data.n; k++) {
+
+                double a_value = cplex.getValue(a[i][k]);
+
+                if(a_value > 1e-9) {
+                    fprintf(ra, "a[%d][%d] = %.12f\n",
+                            i + 1,
+                            k + 1,
+                            a_value);
+                }
+            }
+        }
+
+        fprintf(ra, "============================================================\n");
+        fclose(ra);
+
+        // Salvar valores de b
+        FILE *rb;
+        rb = fopen("b_results.txt", "aw+");
+
+        fprintf(rb, "\n");
+        fprintf(rb, "============================================================\n");
+        fprintf(rb, "Teste: %s | alpha: %.1f | receita: %.0f | custo hub: %.0f | custo link: %.0f\n",
+                argv[1],
+                data.alpha,
+                data.r[0][0],
+                data.s[0],
+                data.g[0][0]);
+
+        fprintf(rb, "Valores de b:\n");
+
+        for(int i = 0; i < data.n; i++) {
+            for(int j = 0; j < data.n; j++) {
+                for(int m = 0; m < data.n; m++) {
+
+                    double b_value = cplex.getValue(b[i][j][m]);
+
+                    if(b_value > 1e-9) {
+                        fprintf(rb, "b[%d][%d][%d] = %.12f\n",
+                                i + 1,
+                                j + 1,
+                                m + 1,
+                                b_value);
+                    }
+                }
+            }
+        }
+
+        fprintf(rb, "============================================================\n");
+        fclose(rb);
 
         // salvar resultados em arquivo
         FILE *re;
