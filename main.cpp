@@ -74,26 +74,6 @@ int main (int argc, char *argv[]) {
             gap = 0.0;
         }
 
-
-        // --- CÁLCULO DE DEMANDA 
-        // double totalDemand = 0;
-        // double satisfiedDemand = 0;
-        
-        // for(int i = 0; i < data.n; i++) {
-        //     for(int j = 0; j < data.n; j++) {
-        //         totalDemand += data.w[i][j];
-        //         for(int m = 0; m < data.n; m++) {
-        //             double b_val = cplex.getValue(b[i][j][m]);
-        //             if(b_val > 0.00001) {
-        //                 satisfiedDemand += data.w[i][j] * b_val;
-        //             }
-        //         }
-        //     }
-        // }
-
-        // (o cálculo anterior calculava o volume de mercadorias transportadas: 
-        // somar o peso (w_ij​) das rotas abertas e dividir pela soma de todos os pesos da matriz)
-
         // CÁLCULO DA DEMANDA SATISFEITA POR NÚMERO DE PARES 0-D
         int satisfiedPairs = 0;
         // o total de pares OD posíveis é 25 x 24 = 600 (já qeue um nó não manda mercadoria para ele mesmo) 
@@ -118,6 +98,34 @@ int main (int argc, char *argv[]) {
         }
         double percentDemand = ((double)satisfiedPairs / totalPairs) * 100.0;        
 
+        // Salvar valores de x
+        FILE *rx;
+        rx = fopen("x_r2_results.txt", "aw+");
+
+        fprintf(rx, "\n");
+        fprintf(rx, "============================================================\n");
+        fprintf(rx, "Teste: %s | alpha: %.1f | receita: %.0f | custo hub: %.0f | custo link: %.0f\n",
+                argv[1],
+                data.alpha,
+                data.r[0][0],
+                data.s[0],
+                data.g[0][0]);
+
+        fprintf(rx, "Alocações:\n");
+
+        for(int i = 0; i < data.n; i++) {
+            for(int k = 0; k < data.n; k++) {
+
+                double x_value = cplex.getValue(x[i][k]);
+
+                if(x_value >= 0.5) {
+                    fprintf(rx, "Nó %d -> Hub %d\n", i + 1, k + 1);
+                }
+            }
+        }
+
+        fprintf(rx, "============================================================\n");
+        fclose(rx);
 
         // RESULTADOS 
 

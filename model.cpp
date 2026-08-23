@@ -139,13 +139,15 @@ void createConstraints(IloEnv& env, IloModel& mod, Data& data,
                      IloArray<IloArray<IloNumVarArray>>& b,
                      vector<double>& O) {
 
+    int r_alloc = 2;
+
     // R1: forall(i in 1..n) sum(k in 1..n) x[i][k] <= 1
     for (int i = 0; i < data.n; i++) {
         IloExpr r1(env);
         for (int k = 0; k < data.n; k++) {
             r1 += x[i][k];
         }
-        mod.add(r1 <= 1);
+        mod.add(r1 <= r_alloc);
         r1.end();
     }
 
