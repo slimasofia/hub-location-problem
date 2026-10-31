@@ -41,10 +41,10 @@ int main (int argc, char *argv[]) {
         // CONFIGURAÇÕES DO CPLEX
         IloCplex cplex(mod);
         cplex.setParam(IloCplex::EpGap, 0.0000001);             // Definindo uma tolerância
-        cplex.setParam(IloCplex::TiLim, 21600);                 // Tempo limite de resolução
+        cplex.setParam(IloCplex::TiLim, 86400);                 // Tempo limite de resolução
         cplex.setWarning(env.getNullStream());                  // Eliminar warnings
 		cplex.setOut(env.getNullStream());					    // Elimina logs
-      //cplex.setParam(IloCplex::Param::Benders::Strategy, 3);  // Ativar Benders do solver
+        cplex.setParam(IloCplex::Param::Benders::Strategy, 3);  // Ativar Benders do solver
             
         // Pré-fixando variáveis
         for(int i = 0; i < data.n; i++) {   
@@ -209,6 +209,8 @@ int main (int argc, char *argv[]) {
         fprintf(re, "Valor função objetivo: %f\t \n", (double) cplex.getObjValue());
         fprintf(re, "Demanda Satisfeita: %d pares (%.2f%%)\t \n", satisfiedPairs, percentDemand);        
         fprintf(re, "Tempo de CPU: %f\t \n", (double) timer.getTime());
+        fprintf(re, "Nós explorados: %ld\t \n", (long) cplex.getNnodes());
+        fprintf(re, "Cortes de Benders: %d\t \n", (int) cplex.getNcuts(IloCplex::CutBenders));
         fprintf(re, "Hubs: " );
         for(int hub : hubs) {
             fprintf(re, "%d\t ", hub);
