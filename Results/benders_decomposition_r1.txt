@@ -1,0 +1,288 @@
+Informações Gerais: cab.txt | 25 | 0.2 | 2000 | 50 | 5 
+Valor função objetivo: 1149.278948	 
+Demanda Satisfeita: 598 pares (99.67%)	 
+Tempo de CPU: 6863.600000	 
+Nós explorados: 106682	 
+Cortes de Benders: 2413	 
+Hubs: 4	 7	 12	 14	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 2000 | 50 | 5 
+Valor função objetivo: 975.521062	 
+Demanda Satisfeita: 576 pares (96.00%)	 
+Tempo de CPU: 96216.000000	 
+Nós explorados: 792057	 
+Cortes de Benders: 3546	 
+Hubs: 4	 7	 12	 14	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 2000 | 50 | 5 
+Valor função objetivo: 830.822571	 
+Demanda Satisfeita: 510 pares (85.00%)	 
+Tempo de CPU: 41505.550000	 
+Nós explorados: 287408	 
+Cortes de Benders: 3815	 
+Hubs: 1	 4	 12	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 2000 | 50 | 5 
+Valor função objetivo: 736.418689	 
+Demanda Satisfeita: 444 pares (74.00%)	 
+Tempo de CPU: 11077.900000	 
+Nós explorados: 95325	 
+Cortes de Benders: 3110	 
+Hubs: 2	 4	 12	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 2000 | 100 | 10 
+Valor função objetivo: 895.546242	 
+Demanda Satisfeita: 578 pares (96.33%)	 
+Tempo de CPU: 753.510000	 
+Nós explorados: 27986	 
+Cortes de Benders: 659	 
+Hubs: 4	 12	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 2000 | 100 | 10 
+Valor função objetivo: 765.003361	 
+Demanda Satisfeita: 550 pares (91.67%)	 
+Tempo de CPU: 265.130000	 
+Nós explorados: 4755	 
+Cortes de Benders: 556	 
+Hubs: 4	 12	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 2000 | 100 | 10 
+Valor função objetivo: 649.175265	 
+Demanda Satisfeita: 400 pares (66.67%)	 
+Tempo de CPU: 721.840000	 
+Nós explorados: 14404	 
+Cortes de Benders: 798	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 2000 | 100 | 10 
+Valor função objetivo: 649.175265	 
+Demanda Satisfeita: 400 pares (66.67%)	 
+Tempo de CPU: 15.470000	 
+Nós explorados: 0	 
+Cortes de Benders: 148	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 2000 | 150 | 15 
+Valor função objetivo: 725.546242	 
+Demanda Satisfeita: 578 pares (96.33%)	 
+Tempo de CPU: 63.120000	 
+Nós explorados: 337	 
+Cortes de Benders: 454	 
+Hubs: 4	 12	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 2000 | 150 | 15 
+Valor função objetivo: 599.175265	 
+Demanda Satisfeita: 400 pares (66.67%)	 
+Tempo de CPU: 206.170000	 
+Nós explorados: 2255	 
+Cortes de Benders: 762	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 2000 | 150 | 15 
+Valor função objetivo: 599.175265	 
+Demanda Satisfeita: 400 pares (66.67%)	 
+Tempo de CPU: 6.220000	 
+Nós explorados: 0	 
+Cortes de Benders: 383	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 2000 | 150 | 15 
+Valor função objetivo: 599.175265	 
+Demanda Satisfeita: 400 pares (66.67%)	 
+Tempo de CPU: 4.150000	 
+Nós explorados: 0	 
+Cortes de Benders: 257	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 1500 | 50 | 5 
+Valor função objetivo: 652.692159	 
+Demanda Satisfeita: 560 pares (93.33%)	 
+Tempo de CPU: 12145.180000	 
+Nós explorados: 175707	 
+Cortes de Benders: 2699	 
+Hubs: 4	 7	 12	 14	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 1500 | 50 | 5 
+Valor função objetivo: 491.883499	 
+Demanda Satisfeita: 494 pares (82.33%)	 
+Tempo de CPU: 34080.870000	 
+Nós explorados: 235568	 
+Cortes de Benders: 4427	 
+Hubs: 1	 4	 12	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 1500 | 50 | 5 
+Valor função objetivo: 402.018732	 
+Demanda Satisfeita: 334 pares (55.67%)	 
+Tempo de CPU: 3494.360000	 
+Nós explorados: 58597	 
+Cortes de Benders: 1610	 
+Hubs: 4	 18	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 1500 | 50 | 5 
+Valor função objetivo: 369.918140	 
+Demanda Satisfeita: 310 pares (51.67%)	 
+Tempo de CPU: 473.300000	 
+Nós explorados: 16880	 
+Cortes de Benders: 751	 
+Hubs: 4	 18	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 1500 | 100 | 10 
+Valor função objetivo: 416.479008	 
+Demanda Satisfeita: 486 pares (81.00%)	 
+Tempo de CPU: 209.840000	 
+Nós explorados: 1873	 
+Cortes de Benders: 693	 
+Hubs: 4	 12	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 1500 | 100 | 10 
+Valor função objetivo: 330.362389	 
+Demanda Satisfeita: 352 pares (58.67%)	 
+Tempo de CPU: 45.190000	 
+Nós explorados: 355	 
+Cortes de Benders: 338	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 1500 | 100 | 10 
+Valor função objetivo: 309.890777	 
+Demanda Satisfeita: 316 pares (52.67%)	 
+Tempo de CPU: 15.490000	 
+Nós explorados: 21	 
+Cortes de Benders: 233	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 1500 | 100 | 10 
+Valor função objetivo: 309.890777	 
+Demanda Satisfeita: 316 pares (52.67%)	 
+Tempo de CPU: 3.780000	 
+Nós explorados: 0	 
+Cortes de Benders: 196	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 1500 | 150 | 15 
+Valor função objetivo: 261.216993	 
+Demanda Satisfeita: 372 pares (62.00%)	 
+Tempo de CPU: 51.140000	 
+Nós explorados: 446	 
+Cortes de Benders: 431	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 1500 | 150 | 15 
+Valor função objetivo: 259.890777	 
+Demanda Satisfeita: 316 pares (52.67%)	 
+Tempo de CPU: 8.610000	 
+Nós explorados: 1	 
+Cortes de Benders: 162	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 1500 | 150 | 15 
+Valor função objetivo: 259.890777	 
+Demanda Satisfeita: 316 pares (52.67%)	 
+Tempo de CPU: 4.180000	 
+Nós explorados: 0	 
+Cortes de Benders: 360	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 1500 | 150 | 15 
+Valor função objetivo: 259.890777	 
+Demanda Satisfeita: 316 pares (52.67%)	 
+Tempo de CPU: 3.240000	 
+Nós explorados: 0	 
+Cortes de Benders: 304	 
+Hubs: 20	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 1000 | 50 | 5 
+Valor função objetivo: 191.622556	 
+Demanda Satisfeita: 344 pares (57.33%)	 
+Tempo de CPU: 2254.470000	 
+Nós explorados: 67990	 
+Cortes de Benders: 1325	 
+Hubs: 4	 12	 14	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 1000 | 50 | 5 
+Valor função objetivo: 145.865425	 
+Demanda Satisfeita: 202 pares (33.67%)	 
+Tempo de CPU: 59.820000	 
+Nós explorados: 479	 
+Cortes de Benders: 570	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 1000 | 50 | 5 
+Valor função objetivo: 119.070432	 
+Demanda Satisfeita: 164 pares (27.33%)	 
+Tempo de CPU: 23.060000	 
+Nós explorados: 275	 
+Cortes de Benders: 471	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 1000 | 50 | 5 
+Valor função objetivo: 115.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 4.350000	 
+Nós explorados: 0	 
+Cortes de Benders: 215	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 1000 | 100 | 10 
+Valor função objetivo: 66.897376	 
+Demanda Satisfeita: 216 pares (36.00%)	 
+Tempo de CPU: 21.560000	 
+Nós explorados: 99	 
+Cortes de Benders: 404	 
+Hubs: 4	 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 1000 | 100 | 10 
+Valor função objetivo: 65.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 6.750000	 
+Nós explorados: 0	 
+Cortes de Benders: 230	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 1000 | 100 | 10 
+Valor função objetivo: 65.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 2.460000	 
+Nós explorados: 0	 
+Cortes de Benders: 133	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 1000 | 100 | 10 
+Valor função objetivo: 65.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 2.040000	 
+Nós explorados: 0	 
+Cortes de Benders: 194	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.2 | 1000 | 150 | 15 
+Valor função objetivo: 15.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 10.450000	 
+Nós explorados: 5	 
+Cortes de Benders: 343	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.4 | 1000 | 150 | 15 
+Valor função objetivo: 15.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 3.970000	 
+Nós explorados: 0	 
+Cortes de Benders: 223	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.6 | 1000 | 150 | 15 
+Valor função objetivo: 15.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 2.540000	 
+Nós explorados: 0	 
+Cortes de Benders: 238	 
+Hubs: 17	 
+======================================================================
+Informações Gerais: cab.txt | 25 | 0.8 | 1000 | 150 | 15 
+Valor função objetivo: 15.282997	 
+Demanda Satisfeita: 96 pares (16.00%)	 
+Tempo de CPU: 2.190000	 
+Nós explorados: 0	 
+Cortes de Benders: 226	 
+Hubs: 17	 
+======================================================================
