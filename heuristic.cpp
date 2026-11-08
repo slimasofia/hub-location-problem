@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
 
     vector<double> single_hub_vector;
     single_hub_vector = ht->single_hub_solution(); // Initial solution
-    cout << "active hub: " << single_hub_vector[0] << endl;
+    cout << "active hub: " << single_hub_vector[0] + 1 << endl;
     cout << "single-hub solution value: " << single_hub_vector[1] << endl;
 
     ht->h[single_hub_vector[0]] = 1;
@@ -70,7 +70,7 @@ int main(int argc, char *argv[]) {
     config_output_file << "installed hubs: ";
     for (int k = 0; k < ht->n; k++) {
         if (ht->h_star[k] > (1 - EPSILON)) {
-            config_output_file << k << "\t";
+            config_output_file << k + 1 << "\t";
         }
     }
 
@@ -79,7 +79,7 @@ int main(int argc, char *argv[]) {
         for (int m = 0; m < ht->n; m++) {
             if (m != k) {
                 if (ht->z_star[km(ht->n, k, m)] > (1 - EPSILON)) {
-                    config_output_file << "(" << k << "," << m << ")" << "\t";
+                    config_output_file << "(" << k + 1 << "," << m + 1 << ")" << "\t";
                 }
             }
         }
