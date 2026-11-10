@@ -110,6 +110,8 @@ void Heuristics::read_data(char *file_name) {
 
     input_file >> n;
 
+    coord_x = vector<double>(n);                       // x coordinate of the nodes (AP)
+    coord_y = vector<double>(n);                       // y coordinate of the nodes (AP)
     w = vector<vector<double> >(n, vector<double>(n)); // Demand to be sent between nodes i and j
     r = vector<vector<double> >(n, vector<double>(n)); // Revenue for sending one unit of demand between nodes i and j
     c = vector<vector<double> >(n, vector<double>(n)); // Cost of sending one unit of demand between nodes i and j
@@ -118,42 +120,84 @@ void Heuristics::read_data(char *file_name) {
     h = vector<double>(n, 0);                          // Active hubs vector initialized with zeros
     z = vector<double>(n * (n - 1), 0);                // Arcs between active hubs initialized with zeros
 
-    // ============== CAB data ============== //
-    demand_sum = 0;
+    // ============== AP data ============== //
+    demand_sum = 0; // For AP data: sum of the hub fixed installation costs (used for the average)
 
-    for (int i = 0; i < n; i++) { // Read demand and costs (CAB)
+    alpha = alpha_arg; // Discount factor between inter-hub nodes
+
+    for (int i = 0; i < n; i++) { // Set revenue (AP)
+        for (int j = 0; j < n; j++) {
+            r[i][j] = revenue_arg; // Typical values: 20, 30, 50
+        }
+    }
+
+    for (int i = 0; i < n; i++) { // Read node coordinates (AP)
+        input_file >> coord_x[i];
+        input_file >> coord_y[i];
+    }
+
+    for (int i = 0; i < n; i++) { // Compute transportation costs from the distances (AP)
+        for (int j = 0; j < n; j++) {
+            c[i][j] = 0.001 * sqrt((coord_x[i] - coord_x[j]) * (coord_x[i] - coord_x[j]) + (coord_y[i] - coord_y[j]) * (coord_y[i] - coord_y[j]));
+        }
+    }
+
+    for (int i = 0; i < n; i++) { // Read demand (AP)
         for (int j = 0; j < n; j++) {
             input_file >> w[i][j];
-            input_file >> c[i][j];
-            demand_sum = demand_sum + w[i][j];
         }
     }
 
-    for (int i = 0; i < n; i++) { // Normalize demand (CAB)
-        for (int j = 0; j < n; j++) {
-            w[i][j] = w[i][j] / demand_sum;
-        }
+    for (int i = 0; i < n; i++) { // Read hub fixed installation cost (AP)
+        input_file >> s[i];
+        s[i] = s[i] / 10;
+        demand_sum = demand_sum + s[i];
     }
 
-    alpha = alpha_arg; // Discount factor between inter-hub nodes (AP)
-
-    for (int i = 0; i < n; i++) { // Set revenue (CAB)
+    for (int i = 0; i < n; i++) { // Set inter-hub link operating cost (AP)
         for (int j = 0; j < n; j++) {
-            r[i][j] = revenue_arg;
-        }
-    }
-
-    for (int i = 0; i < n; i++) { // Set hub fixed installation cost (CAB)
-        s[i] = hub_cost_arg; // Typical values: 50, 100, 150
-    }
-
-    for (int i = 0; i < n; i++) { // Set inter-hub link operating cost (CAB)
-        for (int j = 0; j < n; j++) {
-            g[i][j] = hub_arc_cost_arg; // Typical values: 5, 10, 15
+            g[i][j] = 0.1 * demand_sum / n;
         }
     }
 
     input_file.close();
+
+    // ============== CAB data ============== //
+    // demand_sum = 0;
+    //
+    // for (int i = 0; i < n; i++) { // Read demand and costs (CAB)
+    //     for (int j = 0; j < n; j++) {
+    //         input_file >> w[i][j];
+    //         input_file >> c[i][j];
+    //         demand_sum = demand_sum + w[i][j];
+    //     }
+    // }
+    //
+    // for (int i = 0; i < n; i++) { // Normalize demand (CAB)
+    //     for (int j = 0; j < n; j++) {
+    //         w[i][j] = w[i][j] / demand_sum;
+    //     }
+    // }
+    //
+    // alpha = alpha_arg; // Discount factor between inter-hub nodes
+    //
+    // for (int i = 0; i < n; i++) { // Set revenue (CAB)
+    //     for (int j = 0; j < n; j++) {
+    //         r[i][j] = revenue_arg;
+    //     }
+    // }
+    //
+    // for (int i = 0; i < n; i++) { // Set hub fixed installation cost (CAB)
+    //     s[i] = hub_cost_arg; // Typical values: 50, 100, 150
+    // }
+    //
+    // for (int i = 0; i < n; i++) { // Set inter-hub link operating cost (CAB)
+    //     for (int j = 0; j < n; j++) {
+    //         g[i][j] = hub_arc_cost_arg; // Typical values: 5, 10, 15
+    //     }
+    // }
+    //
+    // input_file.close();
 }
 
 // Initial solution
