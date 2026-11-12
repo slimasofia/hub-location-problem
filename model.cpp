@@ -1,59 +1,99 @@
 #include "model.hpp"
+#define INSTANCIA_AP
 
 void readData(Data& data, ifstream& file, int argc, char *argv[]) {
 
-	file >> data.n;
+    file >> data.n;
 
-	// cria n linhas em cada matriz
-	data.w.assign(data.n, vector<double>(data.n));
+    data.w.assign(data.n, vector<double>(data.n));
     data.c.assign(data.n, vector<double>(data.n));
     data.r.assign(data.n, vector<double>(data.n));
     data.g.assign(data.n, vector<double>(data.n));
     data.s.resize(data.n);
 
+    if (argc >= 3)
+        data.alpha = atof(argv[2]);
+    else data.alpha = 0.2;
 
-	// soma para obter a média geral dos custos fixos de instalação hub 
-	float sum = 0; 
+#ifdef INSTANCIA_AP
+    // ========================== AP Data ==========================
 
-	// Coletar demanda e custos CAB
-	for (int i = 0; i <  data.n; i++) { 
-		for (int j = 0; j < data.n; j++) {
-			file >> data.w[i][j];
-			file >> data.c[i][j];
-			sum = sum + data.w[i][j];
-		}
-	}
+    vector<double> codx(data.n); 
+    vector<double> cody(data.n);
 
-	// Escalonando demanda CAB
-	for (int i = 0; i <  data.n; i++) { 
-		for (int j = 0; j < data.n; j++) {
-		    data.w[i][j] = data.w[i][j]/sum;
-		}
-	}
+    float sum = 0;
 
-	// Coletar fator de desconto nos links inter-hubs CAB
-	if (argc >= 3) 
-		data.alpha = atof(argv[2]);
-	else data.alpha = 0.2;
+    for (int i = 0; i < data.n; i++) {
+        for (int j = 0; j < data.n; j++) {
+            data.r[i][j] = atoi(argv[3]);
+        }
+    }
 
-	// Coletar receita CAB
-	for (int i = 0; i <  data.n; i++) { 
-		for (int j = 0; j < data.n; j++) {
-			data.r[i][j] = atoi(argv[3]);
-		}
-	}
+    for (int i = 0; i < data.n; i++) {
+        file >> codx[i];
+        file >> cody[i];
+    }
 
-	// Coletar custo fixo de instalação CAB
-	for (int i = 0; i <  data.n; i++) { 
-		data.s[i] = atoi(argv[4]);
-	}
+    for (int i = 0; i < data.n; i++) {
+        for (int j = 0; j < data.n; j++) {
+            data.c[i][j] = 0.001 * sqrt((codx[i] - codx[j]) * (codx[i] - codx[j]) + (cody[i] - cody[j]) * (cody[i] - cody[j]));
+        }
+    }
 
-	// Coletar custo de operar links inter-hubs CAB
-	for (int i = 0; i <  data.n; i++) { 
-		for (int j = 0; j < data.n; j++) {
-			data.g[i][j] = atoi(argv[5]);
-		}
-	}
+    for (int i = 0; i < data.n; i++) {
+        for (int j = 0; j < data.n; j++) {
+            file >> data.w[i][j];
+        }
+    }
+
+    for (int i = 0; i < data.n; i++) {
+        file >> data.s[i];
+        data.s[i] = data.s[i] / 10;
+        sum = sum + data.s[i];
+    }
+
+    for (int i = 0; i < data.n; i++) {
+        for (int j = 0; j < data.n; j++) {
+            data.g[i][j] = 0.1 * sum / data.n;
+        }
+    }
+
+#else
+    // ========================== CAB Data ==========================
+
+    float sum = 0;
+
+    for (int i = 0; i < data.n; i++) {
+        for (int j = 0; j < data.n; j++) {
+            file >> data.w[i][j];
+            file >> data.c[i][j];
+            sum = sum + data.w[i][j];
+        }
+    }
+
+    for (int i = 0; i < data.n; i++) {
+        for (int j = 0; j < data.n; j++) {
+            data.w[i][j] = data.w[i][j] / sum;
+        }
+    }
+
+    // Coletar receita CAB
+    for (int i = 0; i < data.n; i++) {
+        for (int j = 0; j < data.n; j++) {
+            data.r[i][j] = atoi(argv[3]);
+        }
+    }
+
+    for (int i = 0; i < data.n; i++) {
+        data.s[i] = atoi(argv[4]);
+    }
+
+    for (int i = 0; i < data.n; i++) {
+        for (int j = 0; j < data.n; j++) {
+            data.g[i][j] = atoi(argv[5]);
+        }
+    }
+#endif
 }
 
 void createVariables(IloEnv& env, Data& data, IloModel& mod,
