@@ -1,0 +1,25 @@
+
+ 
+40L.txt	0.75	20	14099.19	14099.19	0.37
+installed hubs: 28	
+installed arcs:
+ 
+40L.txt	0.75	30	36832.44	37673.78	0.87
+installed hubs: 12	28	
+installed arcs:(12,28)	(28,12)	
+ 
+40L.txt	0.75	50	102000.51	110208.07	5.54
+installed hubs: 12	22	29	
+installed arcs:(12,22)	(12,29)	(22,12)	(22,29)	(29,12)	(29,22)	
+ 
+40T.txt	0.75	20	6404.58	6404.58	0.27
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	30	29568.89	29568.89	0.88
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	50	94926.61	98000.16	1.69
+installed hubs: 19	29	
+installed arcs:(19,29)	(29,19)	
