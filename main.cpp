@@ -41,7 +41,7 @@ int main (int argc, char *argv[]) {
         // CONFIGURAÇÕES DO CPLEX
         IloCplex cplex(mod);
         cplex.setParam(IloCplex::EpGap, 0.0000001);             // Definindo uma tolerância
-        cplex.setParam(IloCplex::TiLim, 21600);                 // Tempo limite de resolução
+        cplex.setParam(IloCplex::TiLim, 86400);                 // Tempo limite de resolução
         cplex.setWarning(env.getNullStream());                  // Eliminar warnings
 		cplex.setOut(env.getNullStream());					    // Elimina logs
       //cplex.setParam(IloCplex::Param::Benders::Strategy, 3);  // Ativar Benders do solver
