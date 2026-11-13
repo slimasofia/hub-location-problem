@@ -1,0 +1,241 @@
+
+ 
+40L.txt	0.75	20	14099.19	14099.19	0.57
+installed hubs: 28	
+installed arcs:
+ 
+40L.txt	0.75	20	14099.19	14099.19	0.43
+installed hubs: 28	
+installed arcs:
+ 
+40L.txt	0.75	20	14099.19	14099.19	0.35
+installed hubs: 28	
+installed arcs:
+ 
+40L.txt	0.75	20	14099.19	14099.19	0.29
+installed hubs: 28	
+installed arcs:
+ 
+40L.txt	0.75	20	14099.19	14099.19	0.40
+installed hubs: 28	
+installed arcs:
+ 
+40L.txt	0.75	20	14099.19	14099.19	0.48
+installed hubs: 28	
+installed arcs:
+ 
+40L.txt	0.75	20	14099.19	14099.19	0.26
+installed hubs: 28	
+installed arcs:
+ 
+40L.txt	0.75	20	14099.19	14099.19	0.64
+installed hubs: 28	
+installed arcs:
+ 
+40L.txt	0.75	20	14099.19	14099.19	0.46
+installed hubs: 28	
+installed arcs:
+ 
+40L.txt	0.75	20	14099.19	14099.19	0.54
+installed hubs: 28	
+installed arcs:
+ 
+40L.txt	0.75	30	36832.44	37673.78	0.88
+installed hubs: 12	28	
+installed arcs:(12,28)	(28,12)	
+ 
+40L.txt	0.75	30	36832.44	37673.78	1.28
+installed hubs: 12	28	
+installed arcs:(12,28)	(28,12)	
+ 
+40L.txt	0.75	30	36832.44	37673.78	1.78
+installed hubs: 12	28	
+installed arcs:(12,28)	(28,12)	
+ 
+40L.txt	0.75	30	36832.44	37673.78	1.19
+installed hubs: 12	28	
+installed arcs:(12,28)	(28,12)	
+ 
+40L.txt	0.75	30	36832.44	37673.78	2.15
+installed hubs: 12	28	
+installed arcs:(12,28)	(28,12)	
+ 
+40L.txt	0.75	30	36832.44	37673.78	0.69
+installed hubs: 12	28	
+installed arcs:(12,28)	(28,12)	
+ 
+40L.txt	0.75	30	36832.44	37673.78	1.08
+installed hubs: 12	28	
+installed arcs:(12,28)	(28,12)	
+ 
+40L.txt	0.75	30	36832.44	37673.78	1.24
+installed hubs: 12	28	
+installed arcs:(12,28)	(28,12)	
+ 
+40L.txt	0.75	30	36832.44	37673.78	2.48
+installed hubs: 12	28	
+installed arcs:(12,28)	(28,12)	
+ 
+40L.txt	0.75	30	36832.44	37673.78	1.22
+installed hubs: 12	28	
+installed arcs:(12,28)	(28,12)	
+ 
+40L.txt	0.75	50	102000.51	110208.07	3.50
+installed hubs: 12	22	29	
+installed arcs:(12,22)	(12,29)	(22,12)	(22,29)	(29,12)	(29,22)	
+ 
+40L.txt	0.75	50	102000.51	110960.68	6.47
+installed hubs: 12	22	28	
+installed arcs:(12,22)	(12,28)	(22,12)	(22,28)	(28,12)	(28,22)	
+ 
+40L.txt	0.75	50	102000.51	110960.68	8.89
+installed hubs: 12	22	28	
+installed arcs:(12,22)	(12,28)	(22,12)	(22,28)	(28,12)	(28,22)	
+ 
+40L.txt	0.75	50	102000.51	110960.68	12.22
+installed hubs: 12	22	28	
+installed arcs:(12,22)	(12,28)	(22,12)	(22,28)	(28,12)	(28,22)	
+ 
+40L.txt	0.75	50	102000.51	110960.68	5.44
+installed hubs: 12	22	28	
+installed arcs:(12,22)	(12,28)	(22,12)	(22,28)	(28,12)	(28,22)	
+ 
+40L.txt	0.75	50	102000.51	110960.68	6.17
+installed hubs: 12	22	28	
+installed arcs:(12,22)	(12,28)	(22,12)	(22,28)	(28,12)	(28,22)	
+ 
+40L.txt	0.75	50	102000.51	110208.07	4.13
+installed hubs: 12	22	29	
+installed arcs:(12,22)	(12,29)	(22,12)	(22,29)	(29,12)	(29,22)	
+ 
+40L.txt	0.75	50	102000.51	110960.68	9.80
+installed hubs: 12	22	28	
+installed arcs:(12,22)	(12,28)	(22,12)	(22,28)	(28,12)	(28,22)	
+ 
+40L.txt	0.75	50	102000.51	110208.07	3.04
+installed hubs: 12	22	29	
+installed arcs:(12,22)	(12,29)	(22,12)	(22,29)	(29,12)	(29,22)	
+ 
+40L.txt	0.75	50	102000.51	110960.68	3.68
+installed hubs: 12	22	28	
+installed arcs:(12,22)	(12,28)	(22,12)	(22,28)	(28,12)	(28,22)	
+ 
+40T.txt	0.75	20	6404.58	6404.58	0.27
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	20	6404.58	6404.58	0.41
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	20	6404.58	6404.58	0.48
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	20	6404.58	6404.58	0.27
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	20	6404.58	6404.58	0.35
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	20	6404.58	6404.58	0.47
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	20	6404.58	6404.58	0.56
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	20	6404.58	6404.58	0.53
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	20	6404.58	6404.58	0.34
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	20	6404.58	6404.58	0.25
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	30	29568.89	29568.89	0.46
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	30	29568.89	29568.89	0.48
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	30	29568.89	29568.89	0.49
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	30	29568.89	29568.89	0.44
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	30	29568.89	29568.89	0.50
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	30	29568.89	29568.89	0.60
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	30	29568.89	29568.89	0.64
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	30	29568.89	29568.89	0.52
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	30	29568.89	29568.89	0.63
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	30	29568.89	29568.89	0.61
+installed hubs: 29	
+installed arcs:
+ 
+40T.txt	0.75	50	94926.61	98000.16	1.50
+installed hubs: 19	29	
+installed arcs:(19,29)	(29,19)	
+ 
+40T.txt	0.75	50	94926.61	98000.16	0.74
+installed hubs: 19	29	
+installed arcs:(19,29)	(29,19)	
+ 
+40T.txt	0.75	50	94926.61	98000.16	1.14
+installed hubs: 19	29	
+installed arcs:(19,29)	(29,19)	
+ 
+40T.txt	0.75	50	94926.61	98000.16	1.42
+installed hubs: 19	29	
+installed arcs:(19,29)	(29,19)	
+ 
+40T.txt	0.75	50	94926.61	98000.16	2.67
+installed hubs: 19	29	
+installed arcs:(19,29)	(29,19)	
+ 
+40T.txt	0.75	50	94926.61	98000.16	1.34
+installed hubs: 19	29	
+installed arcs:(19,29)	(29,19)	
+ 
+40T.txt	0.75	50	94926.61	98000.16	1.63
+installed hubs: 19	29	
+installed arcs:(19,29)	(29,19)	
+ 
+40T.txt	0.75	50	94926.61	98000.16	1.81
+installed hubs: 19	29	
+installed arcs:(19,29)	(29,19)	
+ 
+40T.txt	0.75	50	94926.61	98000.16	1.05
+installed hubs: 19	29	
+installed arcs:(19,29)	(29,19)	
+ 
+40T.txt	0.75	50	94926.61	98000.16	1.21
+installed hubs: 19	29	
+installed arcs:(19,29)	(29,19)	
