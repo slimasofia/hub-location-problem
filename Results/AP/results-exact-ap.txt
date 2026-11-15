@@ -1,0 +1,36 @@
+Informações Gerais: 40L.txt | 40 | 0.8 | 20 | 2006 | 272 
+Valor função objetivo: 14099.194158	 
+Demanda Satisfeita: 348 pares (22.31%)	 
+Tempo de CPU: 67.450000	 
+Hubs: 28	 
+======================================================================
+Informações Gerais: 40L.txt | 40 | 0.8 | 30 | 2006 | 272 
+Valor função objetivo: 38355.182648	 
+Demanda Satisfeita: 882 pares (56.54%)	 
+Tempo de CPU: 8512.670000	 
+Hubs: 11	 28	 
+======================================================================
+Informações Gerais: 40L.txt | 40 | 0.8 | 50 | 2006 | 272 
+Valor função objetivo: 111021.266890	 
+Demanda Satisfeita: 1482 pares (95.00%)	 
+Tempo de CPU: 115376.470000	 
+Hubs: 11	 22	 28	 
+======================================================================
+Informações Gerais: 40T.txt | 40 | 0.8 | 20 | 2319 | 784 
+Valor função objetivo: 6404.578697	 
+Demanda Satisfeita: 362 pares (23.21%)	 
+Tempo de CPU: 24.520000	 
+Hubs: 29	 
+======================================================================
+Informações Gerais: 40T.txt | 40 | 0.8 | 30 | 2319 | 784 
+Valor função objetivo: 29568.890460	 
+Demanda Satisfeita: 806 pares (51.67%)	 
+Tempo de CPU: 101.570000	 
+Hubs: 29	 
+======================================================================
+Informações Gerais: 40T.txt | 40 | 0.8 | 50 | 2319 | 784 
+Valor função objetivo: 98280.080189	 
+Demanda Satisfeita: 1444 pares (92.56%)	 
+Tempo de CPU: 4496.870000	 
+Hubs: 14	 29	 
+======================================================================
